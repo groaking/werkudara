@@ -44,14 +44,14 @@ import tarfile
 import time
 
 # Importing the UI python scripts
-from ui_exported import main_gui
-from ui_exported import universal_dialog
+from .ui_exported import main_gui
+from .ui_exported import universal_dialog
 
 # Importing the application's API
-import api
+from . import api
 
 # Importing the multithreading wiht result library
-from thread import ThreadWithResult
+from .thread import ThreadWithResult
 
 class DialogUniversal(QtWidgets.QDialog, universal_dialog.Ui_Dialog):
     def __init__(self, *args, obj=None, **kwargs):

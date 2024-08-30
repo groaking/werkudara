@@ -1,5 +1,9 @@
 # Werkudara Changelog
 
+## v1.1.0 - August 30, 2024
+
+- Fix: Fixed error cannot import `ui_exported` from the module
+
 ## v1.0.0 - August 30, 2024
 
 - Info: Initial commit and release of the Werkudara app
