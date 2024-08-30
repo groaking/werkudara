@@ -1,5 +1,9 @@
 # Werkudara Changelog
 
+## Next Update
+
+- Fix: Added missing dependency: `openpyxl`
+
 ## v1.1.0 - August 30, 2024
 
 - Fix: Fixed error cannot import `ui_exported` from the module

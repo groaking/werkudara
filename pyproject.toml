@@ -9,12 +9,13 @@ maintainers = [
 ]
 dependencies = [
     "lxml",
+    "openpyxl",
     "platformdirs",
     "PyQt5",
     "requests",
 ]
 license = {text = "GNU General Public License v3.0 only"}
-keywords = ["administrator", "autosync", "BIMA", "control panel", "Diktiristek", "Kemdikbud", "Kemendikbud"]
+keywords = ["administrator", "autosync", "BIMA", "control panel", "Dikti", "Diktiristek", "Kemdikbud", "Kemendikbud", "Ristek", "Ristekdikti"]
 description = "Automatically synchronize author and lecturer data in https://bima.kemdikbud.go.id"
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.9"
