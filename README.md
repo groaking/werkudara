@@ -51,6 +51,20 @@ Ketika program telah selesai termuat, maka akan muncul tampilan seperti pada gam
 > ![.](https://github.com/groaking/werkudara/blob/main/docs/2.png?raw=true)
 > **Gambar 2:** Jendela utama aplikasi Werkudara.
 
+### Penggunaan Aplikasi Werkudara
+
+#### Login Kredensial Operator BIMA Kemdikbud
+
+Masukkan kredensial akun operator BIMA Anda, seperti _username_ dan _password_, sesuai dengan akun operator BIMA dari institusi afiliasi Anda. Anda dapat mencentang opsi `Remember Me` untuk menyimpan kredensial operator BIMA Anda secara lokal, sehingga Anda tidak perlu melakukan _login_ setiap kali membuka **Werkudara**. Kemudian tekan tombol `LOGIN`. Maka proses validasi kredensial akan dimulai.
+
+> ![.](https://github.com/groaking/werkudara/blob/main/docs/3.png?raw=true)
+> **Gambar 3:** Jendela memasukkan kredensial operator BIMA.
+
+Jika kredensial operator BIMA benar, maka akan muncul pesan seperti gambar berikut.
+
+> ![.](https://github.com/groaking/werkudara/blob/main/docs/4.png?raw=true)
+> **Gambar 4:** Pesan berhasil log masuk.
+
 ## Acknowledgement
 
 This module uses and modifies some part of the code in [`save-thread-result`](https://github.com/shailshouryya/save-thread-result) v0.1.1.post1 by [**shailshouryya**](https://github.com/shailshouryya). Licensed under the [MIT License](https://spdx.org/licenses/MIT.html). Copyright (C) 2023 by the respective owner(s).
