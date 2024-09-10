@@ -31,7 +31,25 @@ pip install --upgrade werkudara
 
 Perintah tersebut akan mengunduh serta menginstal **Werkudara** dari situs web [PyPI](https://pypi.org/project/werkudara) (Python Package Index). Anda juga dapat mengunduh dan menjalankan **Werkudara** secara manual melalui [repositori sumber terbuka **Werkudara**](https://github.com/groaking/werkudara).
 
-![**Werkudara** sebagaimana ditampilkan pada situs web PyPI.](docs/1.png)
+> ![.](https://github.com/groaking/werkudara/blob/main/docs/1.png?raw=true)
+> **Gambar 1:** Werkudara sebagaimana ditampilkan pada situs web PyPI.
+
+### Instalasi
+
+**Werkudara** adalah program portabel. Karena itu, **Werkudara** dapat dijalankan pada sistem operasi kompatibel tanpa memerlukan instalasi terlebih dahulu.
+
+### Menjalankan Program
+
+Pastikan komputer Anda terhubung ke internet sebelum Anda menjalankan program **Werkudara**. Kemudian, buka terminal pada sistem operasi Anda dan ketikkan perintah di bawah:
+
+```
+python -m werkudara
+```
+
+Ketika program telah selesai termuat, maka akan muncul tampilan seperti pada gambar berikut.
+
+> ![.](https://github.com/groaking/werkudara/blob/main/docs/2.png?raw=true)
+> **Gambar 2:** Jendela utama aplikasi Werkudara.
 
 ## Acknowledgement
 
