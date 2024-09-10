@@ -32,6 +32,7 @@ pip install --upgrade werkudara
 Perintah tersebut akan mengunduh serta menginstal **Werkudara** dari situs web [PyPI](https://pypi.org/project/werkudara) (Python Package Index). Anda juga dapat mengunduh dan menjalankan **Werkudara** secara manual melalui [repositori sumber terbuka **Werkudara**](https://github.com/groaking/werkudara).
 
 > ![.](https://github.com/groaking/werkudara/blob/main/docs/1.png?raw=true)
+> 
 > **Gambar 1:** Werkudara sebagaimana ditampilkan pada situs web PyPI.
 
 ### Instalasi
@@ -49,6 +50,7 @@ python -m werkudara
 Ketika program telah selesai termuat, maka akan muncul tampilan seperti pada gambar berikut.
 
 > ![.](https://github.com/groaking/werkudara/blob/main/docs/2.png?raw=true)
+> 
 > **Gambar 2:** Jendela utama aplikasi Werkudara.
 
 ### Penggunaan Aplikasi Werkudara
@@ -58,11 +60,13 @@ Ketika program telah selesai termuat, maka akan muncul tampilan seperti pada gam
 Masukkan kredensial akun operator BIMA Anda, seperti _username_ dan _password_, sesuai dengan akun operator BIMA dari institusi afiliasi Anda. Anda dapat mencentang opsi `Remember Me` untuk menyimpan kredensial operator BIMA Anda secara lokal, sehingga Anda tidak perlu melakukan _login_ setiap kali membuka **Werkudara**. Kemudian tekan tombol `LOGIN`. Maka proses validasi kredensial akan dimulai.
 
 > ![.](https://github.com/groaking/werkudara/blob/main/docs/3.png?raw=true)
+> 
 > **Gambar 3:** Jendela memasukkan kredensial operator BIMA.
 
 Jika kredensial operator BIMA benar, maka akan muncul pesan seperti gambar berikut.
 
 > ![.](https://github.com/groaking/werkudara/blob/main/docs/4.png?raw=true)
+> 
 > **Gambar 4:** Pesan berhasil log masuk.
 
 ## Acknowledgement
