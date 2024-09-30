@@ -1,7 +1,9 @@
 # Werkudara Changelog
 
-## Next Update
+## v1.2.0 - September 30, 2024
 
+- New: Added changelog, about, license, and help action windows
+- Improved: Updated changelog details and app guide
 - Fix: Added missing dependency: `openpyxl`
 
 ## v1.1.0 - August 30, 2024

@@ -32,26 +32,62 @@
 import faulthandler
 faulthandler.enable()
 
+
 # Importing essential Python modules
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt
 from datetime import datetime as dt
-from queue import Queue
 import base64
 import os
 import sys
 import tarfile
 import time
 
+
 # Importing the UI python scripts
+from .ui_exported import about
+from .ui_exported import changelog
+from .ui_exported import license
+from .ui_exported import help as apphelp
 from .ui_exported import main_gui
 from .ui_exported import universal_dialog
+
 
 # Importing the application's API
 from . import api
 
+
 # Importing the multithreading wiht result library
 from .thread import ThreadWithResult
+
+
+class AppAbout(QtWidgets.QDialog, about.Ui_About):
+    def __init__(self, *args, obj=None, **kwargs):
+        super(AppAbout, self).__init__(*args, **kwargs)
+        self.setupUi(self)
+        self.exec()
+
+
+class AppChangelog(QtWidgets.QDialog, changelog.Ui_About):
+    def __init__(self, *args, obj=None, **kwargs):
+        super(AppChangelog, self).__init__(*args, **kwargs)
+        self.setupUi(self)
+        self.exec()
+
+
+class AppLicense(QtWidgets.QDialog, license.Ui_About):
+    def __init__(self, *args, obj=None, **kwargs):
+        super(AppLicense, self).__init__(*args, **kwargs)
+        self.setupUi(self)
+        self.exec()
+
+
+class AppHelp(QtWidgets.QDialog, apphelp.Ui_About):
+    def __init__(self, *args, obj=None, **kwargs):
+        super(AppHelp, self).__init__(*args, **kwargs)
+        self.setupUi(self)
+        self.exec()
+
 
 class DialogUniversal(QtWidgets.QDialog, universal_dialog.Ui_Dialog):
     def __init__(self, *args, obj=None, **kwargs):
@@ -74,6 +110,7 @@ class DialogUniversal(QtWidgets.QDialog, universal_dialog.Ui_Dialog):
         '''
         self.label_message.setText(s_message)
         self.setWindowTitle(s_title)
+
 
 class WindowMain(QtWidgets.QMainWindow, main_gui.Ui_MainWindow):
     '''
@@ -101,6 +138,12 @@ class WindowMain(QtWidgets.QMainWindow, main_gui.Ui_MainWindow):
         self.progress.connect(self.p)
         
         # Set event listener
+        self.action_howto.triggered.connect(self.action_howto_triggered)
+        self.action_troubleshooting.triggered.connect(self.action_troubleshooting_triggered)
+        self.action_about.triggered.connect(self.action_about_triggered)
+        self.action_changelog.triggered.connect(self.action_changelog_triggered)
+        self.action_license.triggered.connect(self.action_license_triggered)
+        self.action_quit.triggered.connect(self.action_quit_triggered)
         self.btn_export.clicked.connect(self.btn_export_clicked)
         self.btn_import.clicked.connect(self.btn_import_clicked)
         self.btn_login.clicked.connect(self.btn_login_clicked)
@@ -130,7 +173,26 @@ class WindowMain(QtWidgets.QMainWindow, main_gui.Ui_MainWindow):
             self.input_user.setText(u_dec)
             self.input_pass.setText(p_dec)
             self.checkbox_remember.setChecked(True)
-    
+
+    def action_howto_triggered(self):
+        AppHelp()
+
+    def action_troubleshooting_triggered(self):
+        AppHelp()
+
+    def action_about_triggered(self):
+        AppAbout()
+
+    def action_changelog_triggered(self):
+        AppChangelog()
+
+    def action_license_triggered(self):
+        AppLicense()
+
+    def action_quit_triggered(self):
+        self.o(f'Exitting the app ...')
+        self.close()
+
     def btn_export_clicked(self):
         # Attempting to export all local lecturers data
         self.o(f'Exporting the lecturers database ...')
@@ -672,7 +734,8 @@ class WindowMain(QtWidgets.QMainWindow, main_gui.Ui_MainWindow):
         
         # Prevent freezing
         QtCore.QCoreApplication.processEvents()
-    
+
+
 app = QtWidgets.QApplication(sys.argv)
 
 window = WindowMain()

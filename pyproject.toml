@@ -1,11 +1,11 @@
 [project]
 name = "werkudara"
-version = "1.1.0"
+version = "1.2.0"
 authors = [
-    { name = "Samarthya Lykamanuella", email = "93555329+groaking@users.noreply.github.com" },
+    { name = "Samarthya Lykamanuella", email = "lykamanuella@outlook.com" },
 ]
 maintainers = [
-    { name = "Samarthya Lykamanuella", email = "93555329+groaking@users.noreply.github.com" },
+    { name = "Samarthya Lykamanuella", email = "lykamanuella@outlook.com" },
 ]
 dependencies = [
     "lxml",
@@ -15,7 +15,7 @@ dependencies = [
     "requests",
 ]
 license = {text = "GNU General Public License v3.0 or later"}
-keywords = ["administrator", "autosync", "BIMA", "control panel", "Dikti", "Diktiristek", "Kemdikbud", "Kemendikbud", "Ristek", "Ristekdikti"]
+keywords = ["administrator", "autosync", "BIMA", "control panel", "Dikti", "Diktiristek", "Kemdikbud", "Kemendikbud", "Kemenristekdikti", "Ristek", "Ristekdikti", "sync"]
 description = "Automatically synchronize author and lecturer data in https://bima.kemdikbud.go.id"
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.9"
