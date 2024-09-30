@@ -113,6 +113,18 @@ Untuk dapat menggunakan fitur penampil data dosen dan peneliti, pertama-tama lak
 
 Jika tidak operasi lain yang perlu Anda lakukan melalui **Werkudara**, Anda dapat menutup program **Werkudara** dengan menekan tombol `X` atau dengan memilih opsi `File > Quit` untuk keluar dari program **Werkudara**.
 
+### E. Penutup
+
+Kami membuka diri selebar-lebarnya terhadap masukan serta saran dari Anda. Jika ada pertanyaan, keluhan, saran, atau kritik yang ingin Anda ajukan terkait program **Werkudara**, dapat Anda kirimkan ke alamat surel sebagai berikut.
+
+[`lykamanuella@outlook.com`](mailto:lykamanuella@outlook.com)
+
+Anda juga dapat berkontribusi secara langsung terhadap pengembangan program **Werkudara** dengan menyunting langsung kode sumber program dan mengirimkan _pull request_, membuka isu program, dan menyarankan fitur baru dengan turut berkontribusi dalam repositori GitHub di repositori berikut:
+
+[https://github.com/groaking/werkudara](https://github.com/groaking/werkudara)
+
+Terima kasih atas minat Anda terhadap program **Werkudara**!
+
 ## Acknowledgement
 
 This module uses and modifies some part of the code in [`save-thread-result`](https://github.com/shailshouryya/save-thread-result) v0.1.1.post1 by [**shailshouryya**](https://github.com/shailshouryya). Licensed under the [MIT License](https://spdx.org/licenses/MIT.html). Copyright (C) 2023 by the respective owner(s).
